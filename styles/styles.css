@@ -72,12 +72,15 @@ div.saludo i{
 div.figura {
     grid-column:2/12;
 }
-div.figura img{
+div.figura img#figura{
     width:100%;
     height: 90%;
     position: relative;
     top:-100px;
     z-index: -999;
+}
+img#figura-dos{
+    display: none;
 }
 article.sobre-mi{
     display: grid;
@@ -224,12 +227,15 @@ div.imgenes-footer img:nth-child(2){
     z-index: -999;
 }
 @media (max-width: 840px) {
+    div.container{
+        padding:30px;
+    }
     header.header-primario{
         display: none;
     }
     header.header-secundario{
         display: flex;
-        grid-column:2/12;
+        grid-column:1/13;
         justify-content: end;
         
     }
@@ -238,15 +244,19 @@ div.imgenes-footer img:nth-child(2){
         color: #fff;
     }
     div.saludo{
-        padding:150px 0 0 0;
+        padding:130px 0 0 0;
     }
     div.saludo i{
         font-size:2rem;
-        margin:20px 0 0 0;
     }
-    div.figura img{
-        top:-10px;
-        z-index: -999;
+    div.figura {
+        grid-column:1/13;
+    }
+    img#figura{
+        display: none;
+    }
+    img#figura-dos{
+        display: block;
     }
     article.sobre-mi{
         grid-template-columns: 100%;
