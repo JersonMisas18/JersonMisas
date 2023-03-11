@@ -185,14 +185,15 @@ div.imagen-contacto img:nth-child(2){
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        padding:40px;
+        height: 600px;
     }
     section.figura{
         display: none;
     }
     div.sobre-mi{
         grid-template-columns: repeat(1,1fr);
-        padding: 310px 0 0 0;
+        padding: 30px 0 0 0;
     }
     div.sobre-mi p{
         font-size:15px;
