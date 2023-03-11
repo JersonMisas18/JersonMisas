@@ -157,6 +157,9 @@ div.imagen-contacto img:nth-child(2){
     header{
         display: none;
     }
+    section.figura{
+        display: none;
+    }
     div.sobre-mi{
         grid-template-columns: repeat(1,1fr);
     }
