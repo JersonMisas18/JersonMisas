@@ -161,20 +161,27 @@ div.imagen-contacto img:nth-child(2){
     z-index: -999;
 }
 @media (max-width: 860px){
+    div.container{
+        padding:20px;
+    }
     header#header-primario{
         display: none;
     }
     header#header-secundario{
         display: flex;
         justify-content: end;
-
+        grid-column:1/13;
     }
     header#header-secundario i{
         font-size:30px;
     }
+    div.nombre{
+        grid-column: 1/13;
+    }
     section.figura{
         display: none;
     }
+
     div.sobre-mi{
         grid-template-columns: repeat(1,1fr);
     }
