@@ -31,6 +31,9 @@ header{
     justify-content: space-between;
     grid-column:2/12;
 }
+header#header-secundario{
+    display: none;
+}
 ul{
     display: inline-flex;
     list-style:none;
@@ -50,6 +53,10 @@ a#boton{
 }
 div.nombre{
     grid-column:2/12;
+}
+section.nombre div.texto i{
+    font-size:25px;
+    margin:20px 0 0 0;
 }
 div.nombre section.nombre{
     display: flex;
@@ -154,8 +161,16 @@ div.imagen-contacto img:nth-child(2){
     z-index: -999;
 }
 @media (max-width: 860px){
-    header{
+    header#header-primario{
         display: none;
+    }
+    header#header-secundario{
+        display: flex;
+        justify-content: end;
+
+    }
+    header#header-secundario i{
+        font-size:30px;
     }
     section.figura{
         display: none;
@@ -163,22 +178,30 @@ div.imagen-contacto img:nth-child(2){
     div.sobre-mi{
         grid-template-columns: repeat(1,1fr);
     }
+    div.sobre-mi p{
+        font-size:15px;
+    }
     div.container-imagen-sobre-mi{
         justify-content: center;
     }
     div.texto-sobre-mi{
         padding:40px 0 0 0;
     }
+    div.imagen-sobre-mi img{
+        width: 200px;
+    }
     div.imagen-sobre-mi img:nth-child(1){
         position: relative;
         top:40px;
         right:0px;
         z-index: 999;
+        width: 200px;
     }
     div.imagen-sobre-mi img:nth-child(2){
         position: relative;
-        top:-60px;
+        top:-40px;
         right:0px;
+        width: 180px;
     }
     div.contacto{
         display: grid;
