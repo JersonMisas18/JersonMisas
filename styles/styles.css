@@ -181,7 +181,7 @@ div.imagen-contacto img:nth-child(2){
         flex-direction:column;
     }
     div.container-header-secundario div.icono-header-secundario i{
-        font-size:30px;
+        font-size:45px;
     }
     main.main-secundario{
         display: none;
@@ -201,18 +201,23 @@ div.imagen-contacto img:nth-child(2){
         margin:10px 0 20px 0;
         width: 130px;
     }
+    
+    div.container-header-secundario main ul li section a{
+        font-size: 20px;
+    }
     div.container-header-secundario main ul li section a:hover{
         border-radius:7px;
         width: 100px;
         text-align: right;
-    }
-    div.container-header-secundario main ul li section a:hover{
         text-decoration: underline;
         width:400px;
         transition: all .3s;
-
+        font-size: 20px;
     }
-
+    div.container-header-secundario main ul li section i{
+        font-size:20px;
+        margin:0 20px 0 0;
+    }
     div.nombre{
         grid-column: 1/13;
         display: flex;

@@ -23,25 +23,26 @@
         <div class="container-header-secundario">
             <div class="icono-header-secundario" >
                 <i class="fa-solid fa-bars" id="iconoUno" onmouseover="Lista()"></i>
+                <i class="fa-solid fa-xmark" id="iconoDos" onclick="ocultarLista()"></i>
             </div>
             <main class="main-secundario" id="lista" onmouseleave="ocultarLista()">
                 <ul>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-solid fa-house-chimney iconoSe"></i>
-                            <a href="/">Inicio</a>
+                            <a href="/" onclick="ocultarLista()">Inicio</a>
                         </section>
                     </li>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-solid fa-person iconoSe"></i>
-                            <a href="#sobremi">Sobre mi</a>
+                            <a href="#sobremi" onclick="ocultarLista()">Sobre mi</a>
                         </section>
                     </li>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-regular fa-address-card iconoSe"></i>
-                            <a href="#contacto">Contacto</a>
+                            <a href="#contacto" onclick="ocultarLista()">Contacto</a>
                         </section>
                     </li>
                 </ul>
