@@ -22,25 +22,28 @@ a{
 p{
     color:#fff;
 }
+ul{
+    list-style: none;
+}
+ul li{
+    margin:0 10px;
+}
 div.container{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     padding: 40px;
 }
-header{
+header#header-primario{
     display: flex;
     justify-content: space-between;
     grid-column:2/12;
 }
-header#header-secundario{
+div.container-header-secundario{
     display: none;
 }
-ul{
+header#header-primario ul{
     display: inline-flex;
     list-style:none;
-}
-ul li{
-    margin:0 10px;
 }
 a#boton{
     padding:7px;
@@ -64,7 +67,6 @@ div.nombre section.nombre{
     justify-content: center;
     align-items: center;
     text-align:center;
-    z-index: 999;
     height: 250px;
 }
 div.nombre section.nombre p{
@@ -74,6 +76,7 @@ div.nombre section.figura img{
     width:100%;
     position: relative;
     top:-100px;
+    z-index: -999;
 }
 div.sobre-mi{
     display:grid;
@@ -167,19 +170,49 @@ div.imagen-contacto img:nth-child(2){
 @media (max-width: 860px){
     div.container{
         padding:30px;
-        z-index:999;
     }
     header#header-primario{
         display: none;
     }
-    header#header-secundario{
-        display: flex;
-        justify-content: end;
+    div.container-header-secundario{
         grid-column:1/13;
+        display: flex;
+        align-items:end;
+        flex-direction:column;
     }
-    header#header-secundario i{
+    div.container-header-secundario div.icono-header-secundario i{
         font-size:30px;
     }
+    main.main-secundario{
+        display: none;
+        padding:20px 20px 0 0;
+        z-index: 999;
+    }
+    div.container-header-secundario main ul{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+    div.container-header-secundario main ul li section{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:10px 0 20px 0;
+        width: 130px;
+    }
+    div.container-header-secundario main ul li section a:hover{
+        border-radius:7px;
+        width: 100px;
+        text-align: right;
+    }
+    div.container-header-secundario main ul li section a:hover{
+        text-decoration: underline;
+        width:400px;
+        transition: all .3s;
+
+    }
+
     div.nombre{
         grid-column: 1/13;
         display: flex;

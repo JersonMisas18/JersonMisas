@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/aa3bf1d430.css" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/aa3bf1d430.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Inicio || Jerson Misas</title>
 </head>
 <body>
     <div class="container">
         <header id="header-primario">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <a href="./docuementos/Hoja_de_vida_Jerson_Misas.pdf" download id="boton">Descargar CV</a>        
@@ -22,9 +20,33 @@
         <!--
            Inicio header secundario
         -->
-        <header id="header-secundario">
-            <i class="fa-solid fa-bars"></i>
-        </header>
+        <div class="container-header-secundario">
+            <div class="icono-header-secundario" >
+                <i class="fa-solid fa-bars" id="iconoUno" onmouseover="Lista()"></i>
+            </div>
+            <main class="main-secundario" id="lista" onmouseleave="ocultarLista()">
+                <ul>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-sharp fa-solid fa-house-chimney iconoSe"></i>
+                            <a href="/">Inicio</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-sharp fa-solid fa-person iconoSe"></i>
+                            <a href="#sobremi">Sobre mi</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-sharp fa-regular fa-address-card iconoSe"></i>
+                            <a href="#contacto">Contacto</a>
+                        </section>
+                    </li>
+                </ul>
+            </main>
+        </div>
         <!--
             Fin Header secundario
         -->
@@ -99,5 +121,8 @@
             </div>
         </footer>     
     </div>
+    
+    <script src="https://kit.fontawesome.com/aa3bf1d430.js" crossorigin="anonymous"></script>
+    <script src="./Js/index.js"></script>
 </body>
 </html>                   
