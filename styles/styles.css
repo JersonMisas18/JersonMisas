@@ -55,6 +55,9 @@ a#boton{
     font-size:13px;
     text-shadow: 0 0 5px #fff;
 }
+a.boton-cv-secundario{
+    display: none;
+}
 div.nombre{
     grid-column:2/12;
 }
