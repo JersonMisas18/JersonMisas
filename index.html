@@ -22,27 +22,27 @@
         -->
         <div class="container-header-secundario">
             <div class="icono-header-secundario" >
-                <i class="fa-solid fa-bars" id="iconoUno" onmouseover="Lista()"></i>
-                <i class="fa-solid fa-xmark" id="iconoDos" onclick="ocultarLista()"></i>
+                <i class="fa-solid fa-bars" id="iconoUno" onmouseover="return Lista()"></i>
+                <i class="fa-solid fa-xmark" id="iconoDos" onmouseover="return ocultarLista()"></i>
             </div>
-            <main class="main-secundario" id="lista" onmouseleave="ocultarLista()">
+            <main class="main-secundario" id="lista" onclick="return ocultarLista()">
                 <ul>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-solid fa-house-chimney iconoSe"></i>
-                            <a href="/" onclick="ocultarLista()">Inicio</a>
+                            <a href="/" onclick="return ocultarLista()">Inicio</a>
                         </section>
                     </li>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-solid fa-person iconoSe"></i>
-                            <a href="#sobremi" onclick="ocultarLista()">Sobre mi</a>
+                            <a href="#sobremi" onclick="return ocultarLista()">Sobre mi</a>
                         </section>
                     </li>
                     <li>
                         <section class="section-header">
                             <i class="fa-sharp fa-regular fa-address-card iconoSe"></i>
-                            <a href="#contacto" onclick="ocultarLista()">Contacto</a>
+                            <a href="#contacto" onclick="return ocultarLista()">Contacto</a>
                         </section>
                     </li>
                 </ul>
@@ -51,7 +51,7 @@
         <!--
             Fin Header secundario
         -->
-        <div class="nombre" onclick="ocultarLista()">
+        <div class="nombre" onclick="return ocultarLista()">
             <section class="nombre">
                 <div class="texto">
                     <h1>Jerson Misas</h1>
