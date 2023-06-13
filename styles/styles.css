@@ -71,6 +71,7 @@ div.nombre section.nombre{
 }
 div.nombre section.nombre p{
     font-family: "Poppins-light";
+    color:#c6c6c6;
 }
 div.nombre section.figura img{
     width:100%;
@@ -82,7 +83,7 @@ div.sobre-mi{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-column:2/12;
-    padding: 40px 0 160px 0;
+    padding: 40px 0 150px 0;
 }
 div.titulo{
     display: flex;
@@ -226,12 +227,20 @@ div.imagen-contacto img:nth-child(2){
         padding:40px;
         height: 600px;
     }
+    div.nombre h1{
+        font-size:30px;
+    }
+    div.nombre p{
+        width: 400px;
+        font-size:17px;
+        color:#c6c6c6;
+    }
     section.figura{
         display: none;
     }
     div.sobre-mi{
         grid-template-columns: repeat(1,1fr);
-        padding: 30px 0 0 0;
+        padding: 50px 0 0 0;
     }
     div.sobre-mi p{
         font-size:15px;
