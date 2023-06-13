@@ -205,6 +205,7 @@ div.imagen-contacto img:nth-child(2){
     
     div.container-header-secundario main ul li section a{
         font-size: 20px;
+    
     }
     div.container-header-secundario main ul li section a:hover{
         border-radius:7px;
@@ -270,12 +271,15 @@ div.imagen-contacto img:nth-child(2){
     div.contacto{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        padding: 30px 0 0 0;
+        padding: 30px 0 30px 0;
     }
     div.contacto div:nth-child(1){
         grid-column:1/1;
     }
     div.imagen-contacto{
         margin: 70px 0 0 0;
+    }
+    a#boton{
+        font-size: 17px;
     }
 }
