@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'Poppins-regular';
+    src: url(../Fuentes/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-light';
+    src: url(../Fuentes/Poppins/Poppins-Light.ttf);
+}
+*{
+    margin:0;    
+    padding:0;
+    font-family: 'Poppins-regular', Sans-Serif;
+    scroll-behavior: smooth;
+    color:#fff;
+}
+body{
+    background:#0B0B0B;
+    color:#fff;
+}
+a{
+    text-decoration:none;
+    color:#c6c6c6;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    font-size: 30px;
+}
+div.container{
+    padding: 100px;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+}
+section.container-botones{
+    grid-column:4/10;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+section.boton{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 40px 0 10px;
+    transition: all .2s;
+}
+section.boton:hover{
+    box-shadow: 0 0 5px #c6c6c6;
+    width:250px;
+}
+section.boton a{
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 20px;
+}
+section.boton i{
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+@media (max-width: 860px){
+    section.titulo-botones{
+        width: 200px;
+    }
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+}

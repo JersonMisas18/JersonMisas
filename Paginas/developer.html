@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/developer.css">
+    <title>Inicio || Jerson Misas</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header-primario">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="../Documentos/Curriculum_Jerson_Misas.pdf" download id="boton">Descargar CV</a>        
+        </header>
+        <!--
+           Inicio header secundario
+        -->
+        <div class="container-header-secundario">
+            <div class="icono-header-secundario" >
+                <i class="fa-solid fa-bars" id="iconoUno" onmouseover="return Lista()"></i>
+                <i class="fa-solid fa-xmark" id="iconoDos" onmouseover="return ocultarLista()"></i>
+            </div>
+            <main class="main-secundario" id="lista" onclick="return ocultarLista()">
+                <ul>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-sharp fa-solid fa-house-chimney iconoSe"></i>
+                            <a href="/" onclick="return ocultarLista()">Inicio</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-sharp fa-solid fa-person iconoSe"></i>
+                            <a href="#sobremi" onclick="return ocultarLista()">Sobre mi</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="section-header">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#contacto" onclick="return ocultarLista()">Contacto</a>
+                        </section>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <!--
+            Fin Header secundario
+        -->
+        <div class="nombre" onclick="return ocultarLista()">
+            <section class="nombre">
+                <div class="texto">
+                    <h1>Jerson Misas</h1>
+                    <p>Frontend developer & Web designer</p>
+                    <a href="#sobremi"><i class="fa-solid fa-chevron-down" ></i></a>
+                </div>
+            </section>
+            <section class="figura">
+                <img src="../Imagenes/figura.jpg" alt="">
+            </section>
+        </div>
+        <div class="sobre-mi" id="sobremi">
+            <div class="titulo">
+                <hr>
+                <h2>Sobre mi</h2>
+            </div>
+            <div class="texto-sobre-mi">
+                <p>Soy una persona comprometida con cada una
+                de las labores que realizo, muy sociable y con una comunicación asertiva, con
+                capacidad para trabajar en equipo y seguir órdenes. capacidad de
+                adaptarme al cambio, y con gran actitud para estar en constante aprendizaje.</p>
+            </div>
+            <div class="container-imagen-sobre-mi">
+                <div class="imagen-sobre-mi">
+                    <img src="../Imagenes/figuraSobremi.png" alt=""/>
+                    <img src="../Imagenes/sombra-sobre-mi.png" alt=""/>
+                </div>
+            </div>
+            <div class="tecnologias-sobre-mi">
+                <h3>Tecnologias</h3>
+                <div class="iconos-tecnologias">
+                    <img src="../Imagenes/html.png" alt="logo de html"/>
+                    <img src="../Imagenes/css.png" alt="logo de css"/>
+                    <img src="../Imagenes/js.png" alt="logo de javascript"/>
+                    <img src="../Imagenes/react.png" alt="logo de react"/>
+                    <!-- 
+                        Ajustar el logo de figma al mismo tamaño que los demás 
+                        <img src="./Imagenes/figma.png" alt="logo de figma"/>
+                    -->
+                </div>
+            </div>
+        </div>
+        <footer id="contacto">
+            <div class="contacto">
+                <div class="titulo">
+                    <hr>
+                    <h2>Contacto</h2>
+                </div>
+                <div class="redes">
+                    <section class="redes-contacto">
+                        <img src="../Iconos/mail.jpg" alt="Icono de mail">
+                        <p>camilomisas0@gmail.com</p>
+                    </section>
+                    <section class="redes-contacto">
+                        <img src="../Iconos/phone.jpg" alt="Icono de un telefono">
+                        <p>+56 9 4959 4771</p>
+                    </section>
+                    <section class="redes-contacto">
+                        <img src="../Iconos/gitgub.jpg" alt="Icono de github">
+                        <p>JersonMisas18</p>
+                    </section>
+                </div>
+                <div class="container-imagen-contacto">
+                    <div class="imagen-contacto">
+                        <img src="../Imagenes/imagen-footer.png" alt="Imagen de un correo enviandose">
+                        <img src="../Imagenes/sombra-imagen-footer.png" alt="Sombra de la imagen de un correo enviandose">
+                    </div>
+                    <center><a href="../Documentos/Curriculum_Jerson_Misas.pdf" download id="boton" class="boton-cv-secundario">Descargar CV</a></center>
+                </div>
+            </div>
+        </footer>     
+    </div>
+    
+    <script src="https://kit.fontawesome.com/aa3bf1d430.js" crossorigin="anonymous"></script>
+    <script src="../Js/index.js"></script>
+</body>
+</html>                   
